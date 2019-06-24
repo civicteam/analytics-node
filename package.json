@@ -1,6 +1,6 @@
 {
   "name": "analytics-node",
-  "version": "3.4.0-beta.1",
+  "version": "3.4.0-beta.1-externalQueueSupport.0",
   "description": "The hassle-free way to integrate analytics into any Node.js application",
   "license": "MIT",
   "repository": "segmentio/analytics-node",
@@ -27,7 +27,8 @@
     "release": "yarn run np"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "cli.js"
   ],
   "keywords": [
     "analytics",
