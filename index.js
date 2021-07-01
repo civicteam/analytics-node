@@ -33,7 +33,7 @@ class Analytics {
 
     assert(writeKey, 'You must pass your Segment project\'s write key.')
 
-    this.useExternalQueue = options.externalQueue ? true : false
+    this.useExternalQueue = !!options.externalQueue
     this.queue = this.useExternalQueue ? options.externalQueue : []
     this.writeKey = writeKey
     this.host = removeSlash(options.host || 'https://api.segment.io')
